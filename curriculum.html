@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <link rel="stylesheet" href="maquetación-web/assets-proyecto/css/scroll.css"/>
+    <link rel="stylesheet" href="maquetación-web/assets-proyecto/css/styles.css"/>
+    <link rel="stylesheet" href="maquetación-web/assets-proyecto/fonts/fontawesome-free-6.1.2-web/css/all.min.css"/>
+    <link rel="stylesheet" href="maquetación-web/assets-proyecto/fonts/poppins/poppins.css"/>
+    <link rel="stylesheet" href="maquetación-web/assets-proyecto/css/reset.css"/>
+    <link rel="stylesheet" href="maquetación-web/assets-proyecto/css/responsive.css"/>
+    <link rel="icon" href="maquetación-web/assets-proyecto/img/work_FILL0_wght400_GRAD0_opsz48.svg" />
+    <script src="maquetación-web/assets-proyecto/js/menu.js" defer></script>
+    <title>Portafolio - Ramon Estadella</title>
+</head>
+<body>
+    
+
+    <!--Layout principal-->
+    <div class="layout">
+
+        <!--Barra lateral (info usuario)-->
+        <aside class="layout__aside">
+
+            <section class="aside__user-info">
+
+                <!--Informacion general usuario-->
+                <div class="user-info__general">
+                    <div class="user-info__container-image">
+                        <img class="user-info__image" src="maquetación-web/assets-proyecto/img/image.png" alt="Foto de perfil del usuario">
+                    </div>
+
+                    <h2 class="user-info__name">Ramon Estadella</h2>
+                    <h3 class="user-info__job">Front-End Developer</h3>
+                </div>
+
+
+                <!--Menú de navegación-->
+                <nav class="layout__menu">
+                    <ul class="menu__list">
+
+                        <li class="menu__option">
+                            <a class="menu__link" href="index.html">
+                                <i class="menu__icon fa-solid fa-house"></i>
+                                <span class="menu__overlay">Home</span>
+                            </a>
+                        </li>
+
+                        <li class="menu__option">
+                            <a class="menu__link" href="sobre-mi.html">
+                                <i class="menu__icon fa-solid fa-user"></i>
+                                <span class="menu__overlay">Sobre mi</span>
+                            </a>
+                        </li>
+
+                        <li class="menu__option">
+                            <a class="menu__link" href="curriculum.html">
+                                <i class="menu__icon fa-solid fa-graduation-cap menu__link--active"></i>
+                                <span class="menu__overlay">Currículum</span>
+                            </a>
+                        </li>
+
+                        <li class="menu__option">
+                            <a class="menu__link" href="portafolio.html">
+                                <i class="menu__icon fa-solid fa-briefcase"></i>
+                                <span class="menu__overlay">Portafolio</span>
+                            </a>
+                        </li>
+
+                        <li class="menu__option">
+                            <a class="menu__link" href="contacto.html">
+                                <i class="menu__icon fa-solid fa-envelope"></i>
+                                <span class="menu__overlay">Contacto</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+
+
+                <!--Links a redes sociales-->
+                <div class="user-info__links">
+
+                    <ul class="links__social">
+
+                        <li class="social__option">
+                            <a class="social__link" href="https://github.com/RamonEstadella?tab=repositories" target="_blank">
+                                <i class="social__icon fa-brands fa-github"></i>
+                            </a>
+                        </li>
+
+                        <li class="social__option">
+                            <a class="social__link" href="https://www.linkedin.com/in/ramon-estadella-b46474208/" target="_blank">
+                                <i class="social__icon fa-brands fa-linkedin"></i>
+                            </a>
+                        </li>
+
+                        <li class="social__option">
+                            <a class="social__link" href="https://www.instagram.com/codeprogramin/" target="_blank">
+                                <i class="social__icon fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+
+                <!--Boton del curriculum-->
+                <div class="user-info__buttons">
+                    <a href="#" class="user-info__btn">Descargar CV</a>
+
+                </div>
+
+
+                <!--Pie de pagina-->
+                <footer class="user-info__footer">
+            
+                </footer>
+
+
+            </section>
+
+        </aside>
+
+
+        <!--Menú responsive-->
+
+        <div class="layout__menu-toggle">
+            <i class="menu-toggle__icon fa-solid fa-bars"></i>
+            <i class="menu-toggle__icon fa-solid fa-xmark"></i>
+        </div>
+
+        <!--Contenido principal-->
+        <main class="layout__content">
+
+            <section class="content__page content__resume">
+                <header class="resume__header">
+                    <h1 class="resume__title">Currículum</h1>
+                </header>
+
+                <div class="resume__container">
+
+                    <section class="resume__left">
+                        <header class="resume__subheader">
+                            <h2 class="resume__subtitle">Formación</h2>
+                        </header>
+
+                        <div class="resume__timelines">
+                            
+                            <article class="timelines__timeline">
+
+                                <div class="timeline__description">
+                                    <h3 class="timeline__title">Desarrollo web (2023-2024)</h3>
+                                    <p class="timeline__description">
+                                        He estudiado el Máster de Desarrollo Web de la Universitat Oberta de Catalunya (UOC). Me he formado tanto como FrontEnd como BackEnd, cursando asignaturas de UX/UI donde me he instruido en FIGMA.
+                                    </p>
+                                </div>
+
+                            </article>
+
+                            <article class="timelines__timeline">
+
+                                <div class="timeline__description">
+                                    <h3 class="timeline__title">Química (2015-2021)</h3>
+                                    <p class="timeline__description">
+                                        He estudiado el Grado Universitario de Química en la Universitat Rovira i Virgili (URV). Me he instruido en química orgánica, inorgánica, analítica, ambiental, bioquímica y química física. He aprendido a aplicar el método científico en muchos procesos industriales y de laboratorio, a solucionar problemáticas y a trabajar en equipo.
+                                    </p>
+                                </div>
+
+                            </article>
+
+                        </div>
+
+                        <header class="resume__subheader">
+                            <h2 class="resume__subtitle">Experiencia</h2>
+                        </header>
+
+                        <div class="resume__timelines">
+                            
+                            <article class="timelines__timeline">
+
+                                <div class="timeline__description">
+                                    <h3 class="timeline__title">Desarrollador Web (2023-2024) </h3>
+                                    <p class="timeline__description">
+                                        He estado trabajando como Freelance con proyectos de Desarrollo Web. He maquetado la página Web de la "Cooperativa La Garbiana" sobre productos ecológicos, he maquetado y programado muchas páginas web con cursos de Ûdemy y del Máster de la UOC, he realizado trabajos no remunerados programando la página web de la Asociación de Discapacitados "UDiverso", y entre otros proyectos he creado la Página Web de "Grup de recerques de les Terres de Ponent".
+                                    </p>
+                                </div>
+
+                            </article>
+
+                            <article class="timelines__timeline">
+
+                                <div class="timeline__description">
+                                    <h3 class="timeline__title">Químico Ambiental (2020-2021)</h3>
+                                    <p class="timeline__text">
+                                        He trabajado durante dos años en Química Ambiental. Primero en un grupo de investigación de la URV sobre el impacto ambiental de los microplásticos del Mediterráneo y del glaciar del Aneto, para despues empezar a trabajar en la empresa GeoHid, realizando trabajos sobre contaminación de aguas y su química.
+                                    </p>
+                                </div>
+
+                            </article>
+
+                        </div>
+
+                    </section>
+
+                    <section class="resume__right">
+
+                        <header class="resume__subheader">
+                            <h2 class="resume__subtitle">Conocimientos</h2>
+                        </header>
+
+                        <div class="resume__knowledges">
+                            <ul class="knowledge__list">
+                                <li class="knowledge__option">- UX/UI Figma</li>
+                                <li class="knowledge__option">- HTML, CSS</li>
+                                <li class="knowledge__option">- SASS, Tailwind, Bootstrap</li>
+                                <li class="knowledge__option">- JavaScript & Typescript</li>
+                                <li class="knowledge__option">- FrontEnd AngularJS</li>
+                                <li class="knowledge__option">- BackEnd PHP</li>
+                                <li class="knowledge__option">- Control de Versiones Git & GitHub</li>
+                                <li class="knowledge__option">- Bases de Datos SQL</li>
+                                <li class="knowledge__option">- WordPress</li>
+                                <li class="knowledge__option">- Método científico</li>
+                                <li class="knowledge__option">- Química</li>
+                            </ul>
+                        </div>
+
+                    </section>
+
+                </div>
+
+                <div class="resume__certificates">
+                    <header class="resume__subheader">
+                        <h2 class="resume__subtitle">Certificados</h2>
+                    </header>
+
+                    <section class="certificates__container">
+
+                        <article class="certificates__certificate">
+                            <div class="certificate__logo">
+                                <img class="certificate__image" src="maquetación-web/assets-proyecto/img/certificado-1.png">
+                            </div>
+
+                            <div class="certificate__content">
+                                <h4 class="certificate__title">
+                                    CSS3 Mastery: Flexbox, Grid, SASS, Bootstrap 5 from ÛDEMY (Instructor: Jorge Durand)</h4>
+                                <span class="certificate__id">ID Verificación: 43754</span>
+                                <span class="certificate__date">10 Junio 2023</span>
+                            </div>
+                        </article>
+
+                        <article class="certificates__certificate">
+                            <div class="certificate__logo">
+                                <img class="certificate__image" src="maquetación-web/assets-proyecto/img/certificado-1.png">
+                            </div>
+
+                            <div class="certificate__content">
+                                <h4 class="certificate__title">GIT+GitHub: A whole version control system from scratch from ÛDEMY (Instructor: Fernando Herrera)</h4>
+                                <span class="certificate__id">ID Verificación: 84384</span>
+                                <span class="certificate__date">10 Junio 2023</span>
+                            </div>
+                        </article>
+
+                        <article class="certificates__certificate">
+                            <div class="certificate__logo">
+                                <img class="certificate__image" src="maquetación-web/assets-proyecto/img/certificado-1.png">
+                            </div>
+
+                            <div class="certificate__content">
+                                <h4 class="certificate__title">Learn interface design (UI) with Figma from ÛDEMY (Instructor: Cristina Venanzetti)</h4>
+                                <span class="certificate__id">ID Verificación: 84384</span>
+                                <span class="certificate__date">10 Junio 2023</span>
+                            </div>
+                        </article>
+
+                    </section>
+                </div>
+
+            </section>
+
+        </main>    
+    
+    </div>
+
+</body>
+</html>

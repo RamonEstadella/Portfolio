@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <link rel="stylesheet" href="maquetación-web/assets-proyecto/css/scroll.css"/>
+    <link rel="stylesheet" href="maquetación-web/assets-proyecto/css/styles.css"/>
+    <link rel="stylesheet" href="maquetación-web/assets-proyecto/fonts/fontawesome-free-6.1.2-web/css/all.min.css"/>
+    <link rel="stylesheet" href="maquetación-web/assets-proyecto/fonts/poppins/poppins.css"/>
+    <link rel="stylesheet" href="maquetación-web/assets-proyecto/css/reset.css"/>
+    <link rel="stylesheet" href="maquetación-web/assets-proyecto/css/responsive.css"/>
+    <link rel="icon" href="maquetación-web/assets-proyecto/img/work_FILL0_wght400_GRAD0_opsz48.svg" />
+    <script src="maquetación-web/assets-proyecto/js/menu.js" defer></script>
+    <title>Portafolio - Ramon Estadella</title>
+</head>
+<body>
+    
+
+    <!--Layout principal-->
+    <div class="layout">
+
+        <!--Barra lateral (info usuario)-->
+        <aside class="layout__aside">
+
+            <section class="aside__user-info">
+
+                <!--Informacion general usuario-->
+                <div class="user-info__general">
+                    <div class="user-info__container-image">
+                        <img class="user-info__image" src="maquetación-web/assets-proyecto/img/image.png" alt="Foto de perfil del usuario">
+                    </div>
+
+                    <h2 class="user-info__name">Ramon Estadella</h2>
+                    <h3 class="user-info__job">Front-End Developer</h3>
+                </div>
+
+
+                <!--Menú de navegación-->
+                <nav class="layout__menu">
+                    <ul class="menu__list">
+
+                        <li class="menu__option">
+                            <a class="menu__link" href="index.html">
+                                <i class="menu__icon fa-solid fa-house"></i>
+                                <span class="menu__overlay">Home</span>
+                            </a>
+                        </li>
+
+                        <li class="menu__option">
+                            <a class="menu__link menu__link--active" href="sobre-mi.html">
+                                <i class="menu__icon fa-solid fa-user menu__link--active"></i>
+                                <span class="menu__overlay">Sobre mi</span>
+                            </a>
+                        </li>
+
+                        <li class="menu__option">
+                            <a class="menu__link" href="curriculum.html">
+                                <i class="menu__icon fa-solid fa-graduation-cap"></i>
+                                <span class="menu__overlay">Currículum</span>
+                            </a>
+                        </li>
+
+                        <li class="menu__option">
+                            <a class="menu__link" href="portafolio.html">
+                                <i class="menu__icon fa-solid fa-briefcase"></i>
+                                <span class="menu__overlay">Portafolio</span>
+                            </a>
+                        </li>
+
+                        <li class="menu__option">
+                            <a class="menu__link" href="contacto.html">
+                                <i class="menu__icon fa-solid fa-envelope"></i>
+                                <span class="menu__overlay">Contacto</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+
+
+                <!--Links a redes sociales-->
+                <div class="user-info__links">
+
+                    <ul class="links__social">
+
+                        <li class="social__option">
+                            <a class="social__link" href="https://github.com/RamonEstadella?tab=repositories" target="_blank">
+                                <i class="social__icon fa-brands fa-github"></i>
+                            </a>
+                        </li>
+
+                        <li class="social__option">
+                            <a class="social__link" href="https://www.linkedin.com/in/ramon-estadella-b46474208/" target="_blank">
+                                <i class="social__icon fa-brands fa-linkedin"></i>
+                            </a>
+                        </li>
+
+                        <li class="social__option">
+                            <a class="social__link" href="https://www.instagram.com/codeprogramin/" target="_blank">
+                                <i class="social__icon fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <!--Boton del curriculum-->
+                <div class="user-info__buttons">
+                    <a href="#" class="user-info__btn">Descargar CV</a>
+
+                </div>
+
+
+                <!--Pie de pagina-->
+                <footer class="user-info__footer">
+                 
+                </footer>
+
+
+            </section>
+
+        </aside>
+
+
+        <!--Menú responsive-->
+
+        <div class="layout__menu-toggle">
+            <i class="menu-toggle__icon fa-solid fa-bars"></i>
+            <i class="menu-toggle__icon fa-solid fa-xmark"></i>
+        </div>
+
+        <!--Contenido principal-->
+        <main class="layout__content">
+
+            <section class="content__page content__about">
+                <header class="about__header">
+                    <h2 class="about__title">Sobre <span class="title__color">Mi</span></h2>
+                </header>
+
+                <section class="about__personal-info">
+
+                    <article class="personal-info__bio">
+                        <p class="personal-info__description">
+                            Mi nombre es Ramon Estadella Serra.
+                            Soy graduado universitario en Química, y estoy cambiando de ámbito laboral, por lo que estoy estudiando un Máster de Desarrollo Web FrontEnd en la UOC.
+                            Los estudios de química me han dado una visión y un vagaje científico muy bueno, pero mi destino laboral está en la programación.
+                            
+                        </p>
+                    </article>
+
+                    <div class="personal-info__data">
+                        <ul class="personal-info__list">
+                            <li class="personal-info__option">
+                                <span class="personal-info__title">Edad:</span>
+                                <span class="personal-info__value">26</span>
+                            </li>
+
+                            <li class="personal-info__option">
+                                <span class="personal-info__title">Pais:</span>
+                                <span class="personal-info__value">España</span>
+                            </li>
+
+                            <li class="personal-info__option">
+                                <span class="personal-info__title">Dirección:</span>
+                                <span class="personal-info__value">Lleida (Catalunya, España)</span>
+                            </li>
+
+                            <li class="personal-info__option">
+                                <span class="personal-info__title">Correo:</span>
+                                <span class="personal-info__value">restadellaserra@gmail.com</span>
+                            </li>
+
+                            <li class="personal-info__option">
+                                <span class="personal-info__title">Teléfono:</span>
+                                <span class="personal-info__value">+34 620665859</span>
+                            </li>
+                            
+                        </ul>
+                    </div>
+
+                </section>
+
+                <section class="about__services">
+                    <header class="services-_header">
+                        <h3 class="services__title">
+                            Lo que <span class="title__color">hago</span>
+                        </h3>
+                    </header>
+
+                    <div class="services__container">
+
+                        <article class="services_service">
+                            <div class="service__icon">
+                                <i class="service__real-icon fa-solid fa-computer"></i>
+                            </div>
+
+                            <div class="service__content">
+                                <h4 class="service__title">UX / UI</h4>
+                            </div>
+                        </article>
+
+                        <article class="services_service">
+                            <div class="service__icon">
+                                <i class="service__real-icon fa-solid fa-code"></i>
+                            </div>
+
+                            <div class="service__content">
+                                <h4 class="service__title">Front-End & Back-End</h4>
+                            </div>
+                        </article>
+
+
+                    </div>
+
+
+                </section>
+
+                <section class="about__reviews">
+                    <header class="reviews__header">
+                        <h3 class="reviews__title">Reseñas</h3>
+                    </header>
+
+                    <div class="reviews__container">
+                        <article class="reviews__review">
+                            <div class="review__img-container">
+                                <img class="review__image" src="maquetación-web/assets-proyecto/img/testimonio1.jpg" alt="Cara testimonio">
+                            </div>
+
+                            <div class="review__description">
+                                <p class="review__text">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur corrupti excepturi provident eius blanditiis quaerat eum dignissimos beatae vel voluptate explicabo, veniam quae tenetur mollitia ipsa eos voluptatum est error.
+                                </p>
+                            </div>
+
+                            <div class="review__author">
+                                <div class="review__author-info">
+                                    <h4 class="review__name">David Chica</h4>
+                                    <h5 class="review__company">UDiverso</h5>
+                                </div>
+
+                                <div class="review__author-icon">
+                                    <i class="review__icon fa-solid fa-quote-right"></i>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+                        <article class="reviews__review">
+                            <div class="review__img-container">
+                                <img class="review__image" src="maquetación-web/assets-proyecto/img/testimonio2.jpg" alt="Cara testimonio">
+                            </div>
+
+                            <div class="review__description">
+                                <p class="review__text">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur corrupti excepturi provident eius blanditiis quaerat eum dignissimos beatae vel voluptate explicabo, veniam quae tenetur mollitia ipsa eos voluptatum est error.
+                                </p>
+                            </div>
+
+                            <div class="review__author">
+                                <div class="review__author-info">
+                                    <h4 class="review__name">Ramon Ros</h4>
+                                    <h5 class="review__company">La Garbiana</h5>
+                                </div>
+
+                                <div class="review__author-icon">
+                                    <i class="review__icon fa-solid fa-quote-right"></i>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+                        <article class="reviews__review">
+                            <div class="review__img-container">
+                                <img class="review__image" src="maquetación-web/assets-proyecto/img/testimonio2.jpg" alt="Cara testimonio">
+                            </div>
+
+                            <div class="review__description">
+                                <p class="review__text">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur corrupti excepturi provident eius blanditiis quaerat eum dignissimos beatae vel voluptate explicabo, veniam quae tenetur mollitia ipsa eos voluptatum est error.
+                                </p>
+                            </div>
+
+                            <div class="review__author">
+                                <div class="review__author-info">
+                                    <h4 class="review__name">Miquel Torres</h4>
+                                    <h5 class="review__company">Grup de Recerques de les Terres de Ponent</h5>
+                                </div>
+
+                                <div class="review__author-icon">
+                                    <i class="review__icon fa-solid fa-quote-right"></i>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+                </section>
+
+            </section>
+
+        </main>    
+    
+    </div>
+
+</body>
+</html>

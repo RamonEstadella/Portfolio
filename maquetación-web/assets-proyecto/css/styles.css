@@ -1,0 +1,832 @@
+
+/* VARIABLES */
+
+:root {
+    --color-principal: #d2c1b0;
+    --color-secondariy: #000000;
+
+    --color-background: #917856;
+    --color-transparent: transparent;
+
+    --color-icon: #B5B6B7;
+    --color-title: #e7dfdf;
+    --color-subtitle: #5a5959;
+    --color-text: #9d9c9c;
+
+    --color-contact: #b38947;
+
+    --color-active: #D07661 ;
+
+    --color-border-reviews: #E5E6E7;
+    --color-company: #A5A6A7;
+}
+
+/* ESTILOS GENERALES*/
+
+html {
+    font-size: 10px;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    font-family: 'Poppins', Helvetica, sans-serif;
+    font-size: 1.5rem;
+    background-image: url(../img/samuel-ferrara-1527pjeb6jg-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    color: var(--color-text);
+    overflow: hidden;
+}
+
+/*ESTRUCTURA PRINCIPAL*/
+
+.layout {
+    position: relative;
+    min-width: 1290px;
+    width: 75%;
+    height: 80vh;
+    min-height: 80vh;
+    margin: 10vh auto;
+
+    display: grid;
+    grid-template-areas: 
+        "aside content";
+    grid-template-columns: 30% 70%;
+
+    /* Sombra detrás del layout */
+    border-radius: 4rem;
+    box-shadow: 0 0 200px -5px rgba(11, 11, 11);
+}
+
+.menu__link--active {
+    color: var(--color-active)!important;
+}
+
+
+/* BARRA LATERAL AZUL */
+
+.layout__aside {
+    grid-area: aside;
+    border-radius: 4rem 0 0 4rem;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.aside__user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    min-height: 100%;
+    min-width: 30rem;
+
+    background-color: var(--color-secondariy);
+    color: var(--color-principal);
+}
+
+.user-info__container-image {
+    position: relative;
+    display: inline-block;
+    width: 18rem;
+    margin-top: 7rem;
+    background-color: var(--color-principal);
+    border: 3px solid var(--color-principal);
+    border-radius: 20rem;
+    overflow: hidden;
+}
+
+.user-info__image {
+    width: 100%;
+}
+
+.user-info__name {
+    font-size: 2.7rem;
+    font-weight: bold;
+    color: var(--color-principal);
+    margin-top: 2.6rem;
+}
+
+.user-info__job {
+    font-size: 1.7rem;
+    font-weight: 200;
+    color: var(--color-principal);
+}
+
+.user-info__links {
+    margin-bottom: 3.6rem;
+}
+
+.links__social {
+    margin-top: 2rem;
+    text-align: center;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.social__option {
+    height: 3rem;
+    width: 3rem;
+    font-size: 2rem;
+    line-height: 3.2rem;
+    opacity: 0.9;
+    border-radius: 3rem;
+    transition: all 300ms linear;
+}
+
+.social__option:hover {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.20);
+
+}
+
+.user-info__buttons {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.user-info__btn {
+    padding: 3rem;
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+    border: 2px solid var(--color-principal);
+    border-radius: 3.2rem;
+    color: var(--color-principal);
+    box-shadow: 0 10px 10px -8px rgba(0,0,0,0.22);
+    transition: all 300ms ease-in-out;
+}
+
+.user-info__btn:hover {
+    background-color: var(--color-principal);
+    color: var(--color-secondariy);
+}
+
+.user-info__footer {
+    background-color: transparent;
+}
+
+
+/* CONTENEDOR PRINCIPAL */
+
+.layout__content {
+    grid-area: content;
+    height: 100%;
+    min-height: 100%;
+
+    background-color: var(--color-secondariy);
+    border-radius: 0 10rem 10rem 0;
+}
+
+.content__page {
+    height: 100%;
+    min-height: 100%;
+    background-image: url(../img/paul-earle-wVjd0eWNqI8-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    
+    border-radius: 3.2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.page__name {
+    text-align: center;
+    font-size: 6rem;
+    margin-bottom: 1rem;
+    color: var(--color-secondariy);
+    padding: 2rem;
+}
+
+.page__job {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--color-secondariy);
+    padding: 2rem;
+}
+
+.page__img {
+    width: 32rem;
+}
+
+.page__image {
+    border-radius: 2rem;
+}
+
+/* MENU NAVEGACION LATERAL */
+.layout__menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -105px;
+    background-color: var(--color-transparent);
+    min-width: 11rem;
+}
+
+.menu__list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    width: 60%;
+    min-height: 32rem;
+    padding: 2rem 0;
+    margin-left: 2.5rem;
+    background-color: var(--color-secondariy);
+    box-shadow: 0 0 3rem -0.5rem rgba(0,0,0,0.15);
+    border-radius: 5rem;
+}
+
+.menu__option {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.menu__icon {
+    color: var(--color-icon);
+    font-size: 2.8rem;
+    transition: all 300ms ease-in-out;
+}
+
+.menu__option:hover .menu__icon {
+    color: var(--color-principal);
+}
+
+.menu__overlay {
+    position: absolute;
+    right: 0;
+    margin-top: -3rem;
+    display: block;
+    opacity: 0;
+    padding: 0.5rem 1rem;
+    color: var(--color-principal);
+    background-color: var(--color-secondariy);
+    white-space: nowrap;
+    border-radius: 2rem;
+    transition: all 300ms ease-in-out;
+}
+
+.menu__option:hover .menu__overlay{
+    opacity: 1;
+    right: 100%;
+}
+
+
+/* ESTILOS GENERALES (SOBRE MI Y OTRAS PÁGINAS) */
+
+.content__about,
+.content__resume,
+.content__portfolio,
+.content__contact {
+    display: block;
+    height: 100%;
+    min-height: 100%;
+    padding: 5rem 10rem;
+    padding-right: 3rem;
+    overflow: auto;
+}
+
+.about__header,
+.resume__header,
+.portfolio__header,
+.contact__header {
+    display: inline-block;
+    margin-bottom: 4.5rem;
+}
+
+.about__title,
+.resume__title,
+.portfolio__title,
+.contact__title {
+    color: var(--color-secondariy);
+    font-size: 3.2rem;
+    position: relative;
+    font-weight: bold;
+}
+
+.title__color,
+.subtitle__color,
+.timeline__title,
+.skills__text,
+.knowledge__option {
+    color: var(--color-secondariy);
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.timeline__year {
+    font-size: 2rem;
+}
+
+/* INFORMACION PERSONAL */
+
+.about__personal-info {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.personal-info__bio {
+    flex-basis: 56%;
+}
+
+.personal-info__description {
+    font-size: 1.5rem;
+    line-height:  2.4rem;
+    text-align: justify;
+    color: var(--color-secondariy);
+}
+
+.personal-info__data {
+    flex-basis: 44%;
+    padding: 0 5rem;
+}
+
+.personal-info__option {
+    margin-bottom: 1rem;
+}
+
+.personal-info__title {
+    color: var(--color-secondariy);
+    margin-right: 1.5rem;
+    font-weight:lighter;
+}
+
+.personal-info__value {
+    color: var(--color-secondariy);
+    font-weight: bold;
+}
+
+/* ESTILOS GENERALES COMPARTIDOS ABOUT Y OTRAS SECCIONES*/
+
+.about__services,
+.about__reviews {
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.services__header,
+.reviews__header,
+.resume__subheader {
+    display: inline-block;
+    padding-right: 1.2rem;
+    margin-bottom: 2.5rem;
+    position: relative;
+}
+
+.services__title,
+.reviews__title {
+    font-size: 3rem;
+    margin-bottom: 5rem;
+    color: var(--color-secondariy);
+}
+
+.service__title {
+    font-size: 2rem;
+    color: var(--color-secondariy);
+}
+
+/* SERVICIOS */
+
+.services__container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+
+.services__service {
+    flex-basis: calc(10%-3rem);
+    margin-right: 3rem;
+    margin-bottom: 2.5rem;
+}
+
+.service__real-icon{
+    color: var(--color-border-reviews);
+    font-size: 3.8rem;
+}
+
+.service__description {
+    margin-bottom: 2rem;
+}
+
+.service__icon {
+    text-align: center;
+}
+
+/* REVIEWS */
+
+.reviews__container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.reviews__review {
+    flex-basis: calc(50% - 2.5rem);
+    background-color: var(--color-secondariy);
+    border: 1px solid var(--color-border-reviews);
+    border-radius: 2rem;
+    padding-top: 0;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+    padding-bottom: 1.5rem;
+    margin-right: 2.5rem;
+    margin-top: 4.5rem;
+    margin-bottom: 1rem;
+}
+
+.review__image-container {
+    width: 100%;
+}
+
+.review__text {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+}
+
+.review__image {
+    max-width: 9rem;
+    max-height: 9rem;
+    border-radius: 9rem;
+    margin: 0 auto;
+    margin-top: -4.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 10px -8px rgba(0, 0, 0, 0.22);
+}
+
+.review__description {
+    margin-bottom: 1rem;
+}
+
+.review__author {
+    color: var(--color-border-reviews);
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.review__icon {
+    font-size: 4rem;
+    opacity: 0.5;
+    color: #d6a36d;
+}
+
+/* CURRICULUM*/
+
+.resume__container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.resume__left {
+    margin-right: 1.5rem;
+}
+
+.resume__timelines {
+    margin-bottom: 5rem;
+}
+
+.timelines__timeline {
+    position: relative;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.timeline__header {
+    flex-basis: 30%;
+    text-align: right;
+    padding-right: 1rem;
+}
+
+
+.timeline__year {
+    margin: 0.3rem 0;
+    line-height: 1.9rem;
+    font-size: 1.4rem;
+    color: var(--color-secondariy);
+}
+
+.timeline__company {
+    display: block;
+    margin: 0;
+    margin-bottom: 0.4rem;
+}
+
+.timeline__description {
+    text-align: justify;
+    color: var(--color-secondariy);
+}
+
+.resume__subtitle {
+    color: var(--color-secondariy);
+}
+
+
+/* CURRICULUM DERECHA */
+
+
+.resume__right {
+    flex-basis: 41%;
+    padding: 0 1.5rem;
+    z-index: 100;
+}
+
+.resume__skills {
+    margin-bottom: 3.5rem;
+}
+
+.certificates__certificate {
+    margin-bottom: 3rem;
+}
+
+.certificate__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.certificate__title {
+    color: var(--color-secondariy);
+}
+
+.certificate__id {
+    color: var(--color-secondariy);
+}
+
+.certificate__date {
+    color: var(--color-secondariy);
+}
+
+.certificate__image {
+    height: 3rem;
+    width: 10rem;
+}
+
+.resume__skills {
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.skills__title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills__text {
+    font-size: 1.3rem;
+    line-height: 1.4rem;
+    margin-bottom: 0.4rem;
+}
+
+.skills__number {
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    margin-bottom: 0.4rem;
+    color: var(--color-subtitle);
+}
+
+.skills__progressbar {
+    height: 1rem;
+    border: 1px solid var(--color-principal);
+    border-radius: 1rem;
+    background-color: var(--color-secondariy) ;
+    margin-bottom: 1.5rem;
+}
+
+.skills__percentage {
+    width: 40%;
+    height: 0.8rem;
+    background-color: var(--color-principal);
+    border: 1px solid var(--color-secondariy);
+    border-radius: 1rem;
+}
+
+.skills__percentage--p1 {width: 87%;}
+.skills__percentage--p2 {width: 78%;}
+.skills__percentage--p3 {width: 60%;}
+.skills__percentage--p4 {width: 70%;}
+.skills__percentage--p5 {width: 77%;}
+.skills__percentage--p6 {width: 90%;}
+
+
+
+/* PORTFOLIO */
+
+.portfolio__h4 {
+    color: var(--color-secondariy);
+    font-size: 3rem;
+    text-align: center;
+}
+
+.portfolio__link {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--color-secondariy);
+}
+
+.portfolio__gallery {
+    max-width: 100rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.portfolio__iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+    padding: 2rem;
+    border-radius: 5rem;
+}
+
+.portfolio__figcaption {
+    text-align: center;
+    color: var(--color-secondariy);
+    margin-bottom: 1rem;
+}
+
+.portfolio__codigo {
+    text-align: center;
+    color: var(--color-secondariy);
+    
+}
+
+.portfolio__codigo:hover {
+    text-decoration: underline;
+}
+
+/* CONTACTO */
+
+.contact__container {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact__info {
+    flex-basis: 33%;
+}
+
+.contact__data {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: var(--color-secondariy);
+    border: 0.5px solid var(--color-border-reviews);
+    border-radius: 10px;
+}
+
+.contact__icon {
+    font-size: 3.3rem;
+    color: var(--color-background);
+}
+
+.contact__subtitle {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.contact__form-box {
+    flex-basis: 66%;
+    padding: 0 3rem;
+}
+
+.form-header__title {
+    font-size: 2.1rem;
+    margin-bottom: 2rem;
+    color: var(--color-secondariy);
+}
+
+.form__container {
+    display: flex;
+    flex-direction: row;
+}
+
+.form__left {
+    flex-basis: 47%;
+    margin-right: 1.5rem;
+}
+
+.form__group {
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+
+.form__input {
+    position: relative;
+    width: 100%;
+    height: 4.2rem;
+    display: block;
+    border: 0.2rem solid var(--color-secondariy);
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    /* = padding: 1rem 1.2rem */
+    outline: none;
+    box-shadow: 0 1rem 1rem -8px rgba(0,0,0,0.10);
+    background: 0 0;
+    background-color: transparent;
+    line-height: 2.1rem;
+    z-index: 1;
+}
+
+.form__input:focus {
+    border: 0.2rem solid var(--color-secondariy);
+}
+
+.form__label {
+    position: absolute;
+    top:1rem;
+    left: 1.5rem;
+    color: var(--color-secondariy);
+    transition: all 300ms ease-in-out;
+    pointer-events: none;
+}
+
+.form__input:focus~label,
+.form__input:not(:placeholder-shown)~label {
+    top: -2rem;
+    left: 0;
+    z-index: 1;
+    font-size: 1.3rem;
+    color: var(--color-secondariy);
+}
+
+.form__input::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.form__input::-moz-placeholder {
+    color: transparent;
+}
+
+.form__right {
+    flex-basis: 50%;
+    max-width: 50%;
+    max-height: 100%;
+}
+
+.form__group--textarea {
+    height: 100%;
+}
+
+.form__input--textarea {
+    display: block;
+    resize: none;
+    height: 100%;
+}
+
+.form__button {
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    border: 0.2rem solid var(--color-secondariy);
+    color: var(--color-secondariy);
+    background-color: var(--color-background);
+    border-radius: 3rem;
+    box-shadow: 0 1rem 1rem -8px rgba(0,0,0,0.22);
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.form__button:hover {
+    background-color: var(--color-secondariy);
+    color: var(--color-contact);
+}
+
+.contact__map {
+    width: 100%;
+    min-height: 15rem;
+    margin-bottom: 3.15rem;
+    overflow: hidden;
+}
+
+.contact__iframe {
+    width: 100%;
+    height: 14rem;
+    border-radius: 2rem;
+}
+
+
+
+
+
+
