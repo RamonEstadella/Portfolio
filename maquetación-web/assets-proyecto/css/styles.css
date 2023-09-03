@@ -413,7 +413,7 @@ body {
 }
 
 .service__real-icon{
-    color: var(--color-border-reviews);
+    color: var(--color-secondariy);
     font-size: 3.8rem;
 }
 
