@@ -98,6 +98,7 @@
     .content__page {
         border-radius: 0;
         height: 100vh;
+        padding: 4rem;
     }
 
     .layout__menu {
@@ -238,7 +239,7 @@
         padding: 0rem;
     }
 
-    .page__name {
+    .home__page {
         padding: 0px;
         font-size: 4rem;
     }
