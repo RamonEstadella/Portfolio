@@ -237,6 +237,11 @@
     .contact__form-box {
         padding: 0rem;
     }
+
+    .page__name {
+        padding: 0px;
+        font-size: 4rem;
+    }
 }
 
 
