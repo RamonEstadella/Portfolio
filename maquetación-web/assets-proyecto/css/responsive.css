@@ -60,7 +60,7 @@
         overflow: auto; /* Perque hi hagi scroll*/
         border-radius: 0;
         transition: all 300ms ease-in-out;
-
+        z-index: 2;
         margin-right: -100%;
         opacity: 0;
     }
@@ -139,6 +139,7 @@
     }
 
     .layout__menu-toggle {
+        z-index: 999;
         display: block;
         position: absolute;
         right: 1rem;
