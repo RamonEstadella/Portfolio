@@ -50,7 +50,7 @@
     }
 
     .layout__aside {
-        display: block;
+        display: none;
         position: absolute;
         max-width: 330px;
         top: 0;
@@ -66,6 +66,7 @@
     }
 
     .layout__aside--visible {
+        display: block;
         width: 100%;
         margin-right: 0;
         opacity: 1;
