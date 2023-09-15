@@ -5,7 +5,7 @@
     --color-principal: #d2c1b0;
     --color-secondariy: #000000;
 
-    --color-background: #b19263;
+    --color-background: #9c8260 ;
     --color-transparent: transparent;
 
     --color-icon: #B5B6B7;
@@ -185,9 +185,7 @@ body {
     background-image: url(../img/paul-earle-wVjd0eWNqI8-unsplash.jpg);
     background-position: center;
     background-size: cover;
-    
     border-radius: 3.2rem;
-
     display: flex;
     flex-direction: column;
     align-items: center;
